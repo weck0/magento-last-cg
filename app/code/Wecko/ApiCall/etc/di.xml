@@ -5,4 +5,11 @@
             <argument name="httpClient" xsi:type="object">Magento\Framework\HTTP\Client\Curl</argument>
         </arguments>
     </type>
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="fetchApiDataCommand" xsi:type="object">Wecko\ApiCall\Console\FetchApiDataCommand</item>
+            </argument>
+        </arguments>
+    </type>
 </config>
